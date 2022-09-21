@@ -5,6 +5,9 @@
  */
 package reto_0_din;
 
+import reto_0_din.model.ModelFactory;
+import reto_0_din.view.ViewFactory;
+
 /**
  *
  * @author 2dam
@@ -15,7 +18,8 @@ public class RETO_0_DIN {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+
+       ViewFactory view = new ViewFactory(); 
+       ModelFactory model = new ModelFactory(); 
 }
+    }
