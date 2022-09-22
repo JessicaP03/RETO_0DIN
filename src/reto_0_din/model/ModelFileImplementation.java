@@ -11,13 +11,14 @@ import java.util.ResourceBundle;
  *
  * @author 2dam
  */
-public class ModelImplementation implements Model{
+public class ModelFileImplementation implements VistaModelo{
     
+   @Override
    public String getGreeting(){
        //Cogemos el texto de hola mundo del archivo model y lo devolvemos 
       String text; 
       ResourceBundle text_data;
-      text_data = ResourceBundle.getBundle("Model.File");
+      text_data = ResourceBundle.getBundle("Saludo.Properties");
       text = text_data.getString("message");
       
       return text;

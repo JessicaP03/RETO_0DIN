@@ -5,11 +5,23 @@
  */
 package reto_0_din.view;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author 2dam
  */
 public class ViewFactory {
     
-    //crea y devuelve 
-}
+    private ResourceBundle data;
+    private final String TEXT_TYPE = "TEXT";
+   //private final String SWING_TYPE = "SWING";
+    //private final String FX_TYPE = "FX";
+  
+  //  public ViewInterface getView(){
+    //    ViewInterface view = null;
+        
+        
+      //  return view;
+    }
+//}

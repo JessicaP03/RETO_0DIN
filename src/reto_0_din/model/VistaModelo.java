@@ -9,9 +9,9 @@ package reto_0_din.model;
  *
  * @author 2dam
  */
-public interface Model {
+public interface VistaModelo {
     
-   
+   public String getGreeting();
     
     
 }

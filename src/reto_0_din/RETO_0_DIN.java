@@ -5,6 +5,7 @@
  */
 package reto_0_din;
 
+import reto_0_din.controller.Controller;
 import reto_0_din.model.ModelFactory;
 import reto_0_din.view.ViewFactory;
 
@@ -21,5 +22,8 @@ public class RETO_0_DIN {
 
        ViewFactory view = new ViewFactory(); 
        ModelFactory model = new ModelFactory(); 
+       
+       Controller controller = new Controller();
+      // controller.run(view.getView(),model.getModel());
 }
     }
