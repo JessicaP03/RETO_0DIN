@@ -5,8 +5,8 @@
  */
 package reto_0_din.controller;
 
-import reto_0_din.model.VistaModelo;
-import reto_0_din.view.VistaInterfaz;
+import reto_0_din.model.Model;
+import reto_0_din.view.View;
 
 /**
  *
@@ -14,10 +14,11 @@ import reto_0_din.view.VistaInterfaz;
  */
 public class Controller {
     
-    public void run(VistaInterfaz view , VistaModelo model){
+    public void run(View view , Model model){ 
+      //Declaramos el data 
       String data;
-      data = model.getGreeting();
-      view.showGreeting(data);
+      data = model.getGreeting(); //Coje el mensaje de saludos.propierties y lo mete en data
+      view.showGreeting(data); //Enseña el mensaje que hemos metido en data
         
         
     }

@@ -20,10 +20,11 @@ public class RETO_0_DIN {
      */
     public static void main(String[] args) {
 
+        //Declaramos las factorias y el controlador.
        ViewFactory view = new ViewFactory(); 
        ModelFactory model = new ModelFactory(); 
        
        Controller controller = new Controller();
-      // controller.run(view.getView(),model.getModel());
+      controller.run(view.getView(),model.getModel()); //LLamamos al controlador para que pueda elegir entre modelo y vista
 }
     }

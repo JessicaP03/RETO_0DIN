@@ -6,6 +6,9 @@
 package reto_0_din.view;
 
 import java.util.ResourceBundle;
+import reto_0_din.model.Model;
+import reto_0_din.model.ModelBDImplementation;
+import reto_0_din.model.ModelFileImplementation;
 
 /**
  *
@@ -14,14 +17,27 @@ import java.util.ResourceBundle;
 public class ViewFactory {
     
     private ResourceBundle data;
-    private final String TEXT_TYPE = "TEXT";
-   //private final String SWING_TYPE = "SWING";
-    //private final String FX_TYPE = "FX";
-  
-  //  public ViewInterface getView(){
-    //    ViewInterface view = null;
-        
-        
-      //  return view;
+    private final String text_type = "TEXT";
+   
+    
+
+    public View getView() {
+        View view_t = null;
+        View view_swing = null;
+
+       String data=ResourceBundle.getBundle("RETO_0_DIN.TipoEjecucion").getString("view_type"); //Elige el tipo de vista que quiere utilizar, file o bd.
+        if (text_type.equals(view_t)){ 
+            
+              view_t = new  ViewFileImplementation(); 
+              
+        }else if (text_type.equals(view_swing)){
+              view_t = (View) new  ViewSwingImplementation(); 
+           
+        }else {
+                view_t = (View) new ViewFXImplementation();
+                }
+        return view_t;
+
+}
+    
     }
-//}

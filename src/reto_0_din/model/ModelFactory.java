@@ -13,26 +13,24 @@ import java.util.ResourceBundle;
  */
 public class ModelFactory {
     
+    //Declaramos las variables que vamos a utilizar
     private ResourceBundle data;
-    private final String BD_TIPO="BD";
-    private final String FILE_TIPO="FILE";
+    private final String bd_tipo="BD";
+    private final String file_tipo ="FILE";
     
     //SELECCIONA EL TIPO DE MODELO DEPENDIENDO DEL TIPO DE ARCHIVO 
     
-    public VistaModelo getModel(){
-        VistaModelo model=null;
-        //aqui ahora lo que hacemos es acceder de la carpeta de aplicacion ,cogemos el tipo de ejecucionque vamos a querer hacer 
-        data=ResourceBundle.getBundle("RETO_0_DIN.TipoEjecucion");
-        switch(data.getString("model_type")){
-          case FILE_TIPO:
-              model = new  ModelFileImplementation();
-              break;
-              //QUITAR LOS COMENTARIOS DE ABAJO CUANDO ESTE ECHO LO DE BASES DE DATOS
-          //case BD_TIPO:
-            //   model = new  ModelBDImplementation();
-             // break;
+    public Model getModel(){
+        Model model=null;
+
+       String data=ResourceBundle.getBundle("RETO_0_DIN.TipoEjecucion").getString("model_type"); //Elige el tipo de modelo que quiere utilizar, file o bd.
+        if (file_tipo.equals(model)){ 
+              model = new  ModelFileImplementation(); //Si elige file implementara la clase correspondiente
+        }else{
+              model = new  ModelBDImplementation(); //Si elige bd implementara la clase bd
+           
         }
-        
         return model;
-    }
+
+}
 }
