@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package reto_0_din.model;
+package reto_0_din.exception;
 
 /**
  *
  * @author 2dam
  */
-public interface Model  {
+public class DaoException extends Exception{
+    private static final long serialVersionUID = 1L;
     
-   public String getGreeting() throws Exception;
-    
-    
+    public DaoException (String message){
+        super(message);
+    }
 }

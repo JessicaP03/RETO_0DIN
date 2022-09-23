@@ -14,7 +14,7 @@ import reto_0_din.view.View;
  */
 public class Controller {
     
-    public void run(View viewI , Model modelI){ 
+    public void run(View viewI , Model modelI) throws Exception{ 
       //Declaramos el data 
       String data;
       data = modelI.getGreeting(); //Coje el mensaje de saludos.propierties y lo mete en data
