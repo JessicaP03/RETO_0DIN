@@ -14,11 +14,11 @@ import reto_0_din.view.View;
  */
 public class Controller {
     
-    public void run(View view , Model model){ 
+    public void run(View viewI , Model modelI){ 
       //Declaramos el data 
       String data;
-      data = model.getGreeting(); //Coje el mensaje de saludos.propierties y lo mete en data
-      view.showGreeting(data); //Enseña el mensaje que hemos metido en data
+      data = modelI.getGreeting(); //Coje el mensaje de saludos.propierties y lo mete en data
+      viewI.showGreeting(data); //Enseña el mensaje que hemos metido en data
         
         
     }

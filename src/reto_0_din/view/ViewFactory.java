@@ -24,17 +24,18 @@ public class ViewFactory {
     public View getView() {
         View view_t = null;
         View view_swing = null;
+        View view_fx;
 
        String data=ResourceBundle.getBundle("RETO_0_DIN.TipoEjecucion").getString("view_type"); //Elige el tipo de vista que quiere utilizar, file o bd.
-        if (text_type.equals(view_t)){ 
+        if (text_type.equals(data) ){ 
             
               view_t = new  ViewFileImplementation(); 
               
-        }else if (text_type.equals(view_swing)){
+        }else if (text_type.equals(data)){
               view_t = (View) new  ViewSwingImplementation(); 
            
         }else {
-                view_t = (View) new ViewFXImplementation();
+                view_fx = (View) new ViewFXImplementation();
                 }
         return view_t;
 

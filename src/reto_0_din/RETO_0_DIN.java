@@ -18,7 +18,7 @@ public class RETO_0_DIN {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
         //Declaramos las factorias y el controlador.
        ViewFactory view = new ViewFactory(); 

@@ -15,13 +15,11 @@ public class ModelBDImplementation implements Model {
 
     @Override
     public String getGreeting() {
-        String text; 
-      ResourceBundle text_data; //Resource sirve para adquirir datos de otros archivos
-      text_data = ResourceBundle.getBundle("Saludo.txt");
-      text = text_data.getString("message");
-      
-      return text;
+        return null;
+        
     }
+
+   
 
    
     

@@ -24,7 +24,7 @@ public class ModelFactory {
         Model model=null;
 
        String data=ResourceBundle.getBundle("RETO_0_DIN.TipoEjecucion").getString("model_type"); //Elige el tipo de modelo que quiere utilizar, file o bd.
-        if (file_tipo.equals(model)){ 
+        if (file_tipo.equals(data)){ 
               model = new  ModelFileImplementation(); //Si elige file implementara la clase correspondiente
         }else{
               model = new  ModelBDImplementation(); //Si elige bd implementara la clase bd

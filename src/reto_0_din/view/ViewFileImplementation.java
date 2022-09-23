@@ -13,8 +13,9 @@ public class ViewFileImplementation implements View {
     
     //en este metodo lo que estamos haciendo es enseñar el texto 
     
+    @Override
     public void showGreeting(String message){
-        System.out.println("message");
+        System.out.println(message);
         
     }
     

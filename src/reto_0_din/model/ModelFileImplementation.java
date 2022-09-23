@@ -18,7 +18,7 @@ public class ModelFileImplementation implements Model{
        //Cogemos el texto de hola mundo del archivo model y lo devolvemos 
       String text; 
       ResourceBundle text_data; //Resource sirve para adquirir datos de otros archivos
-      text_data = ResourceBundle.getBundle("Saludo.txt");
+      text_data = ResourceBundle.getBundle("reto_0_din.model.saludo");
       text = text_data.getString("message");
       
       return text;
