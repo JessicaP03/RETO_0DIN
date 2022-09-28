@@ -32,7 +32,7 @@ public class ModelBDImplementation implements Model {
     private String passwordDB;
     
     //CONSEULTA DE SQL
-    private final String consulMensaje = "SELECT data FROM message";
+    private final String consulMensaje = "SELECT mensaje FROM message";
 
     //Cojemos la información para conectarnos a la BD
     
@@ -74,7 +74,7 @@ public class ModelBDImplementation implements Model {
   
     @Override
     public String getGreeting() throws DaoException, ReadException {
-        String text = null;
+        String text = "";
         
         ResultSet rs = null;
         try {
@@ -87,11 +87,12 @@ public class ModelBDImplementation implements Model {
             
             rs = stmt.executeQuery();
             while(rs.next()){
-            text = rs.getString("message.data");
+            text = rs.getString("mensaje");
             }
 
         } catch (Exception e) {
             throw new ReadException("Error de Lectura");
+           
         }
         this.closeConnection();
         return text;
