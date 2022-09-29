@@ -23,7 +23,7 @@ public class ModelFactory {
     public Model getModel(){
         Model model=null;
 
-       String data=ResourceBundle.getBundle("RETO_0_DIN.TipoEjecucion").getString("model_type"); //Elige el tipo de modelo que quiere utilizar, file o bd.
+       String data=ResourceBundle.getBundle("reto_0_din.TipoEjecucion").getString("model_type"); //Elige el tipo de modelo que quiere utilizar, file o bd.
         if (file_tipo.equals(data)){ 
               model = new  ModelFileImplementation(); //Si elige file implementara la clase correspondiente
         }else{

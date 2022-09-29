@@ -25,7 +25,7 @@ public class ViewFactory {
     public View getView() {
         View view = null;
 
-       String data=ResourceBundle.getBundle("RETO_0_DIN.TipoEjecucion").getString("view_type"); //Elige el tipo de vista que quiere utilizar, file o bd.
+       String data=ResourceBundle.getBundle("reto_0_din.TipoEjecucion").getString("view_type"); //Elige el tipo de vista que quiere utilizar, file o bd.
         if (text_type.equals(data) ){ 
             
               view = new ViewFileImplementation(); 
