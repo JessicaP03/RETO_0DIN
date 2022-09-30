@@ -7,7 +7,7 @@ package reto_0_din.view;
 
 /**
  *
- * @author 2dam
+ * Interfaz de vista. 
  */
 public interface View {
     

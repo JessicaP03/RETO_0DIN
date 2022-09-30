@@ -7,11 +7,9 @@ package reto_0_din.view;
 
 /**
  *
- * @author 2dam
+ * COn el metodo showGreeting enseñaremos el mensaje mediante texto
  */
-public class ViewFileImplementation implements View {
-    
-    //en este metodo lo que estamos haciendo es enseñar el texto 
+public class ViewFileImplementation implements View { 
     
     @Override
     public void showGreeting(String message){

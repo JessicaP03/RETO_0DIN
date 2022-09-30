@@ -18,7 +18,9 @@ import reto_0_din.exception.*;
 
 /**
  *
- * @author 2dam
+ * Con el openCOnnection abrimos la ocnexion con la BD
+ * Con el closeConnection cerramos la conexion
+ * getGreeting recogemos el mensaje de la BD
  */
 public class ModelBDImplementation implements Model {
     

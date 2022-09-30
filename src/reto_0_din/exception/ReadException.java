@@ -7,7 +7,7 @@ package reto_0_din.exception;
 
 /**
  *
- * @author 2dam
+ * Excepcion de lectura
  */
 public class ReadException extends Exception{
      private static final long serialVersionUID = 1L;

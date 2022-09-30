@@ -6,12 +6,11 @@
 package reto_0_din.model;
 
 /**
- *
- * @author 2dam
+ * 
+ * Interfaz de modelo.
  */
-public interface Model  {
-    
-   public String getGreeting() throws Exception;
-    
-    
+public interface Model {
+
+    public String getGreeting() throws Exception;
+   
 }

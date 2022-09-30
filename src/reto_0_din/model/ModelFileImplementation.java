@@ -9,13 +9,14 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author 2dam
+ * Recoge el saludo con el metodo getGreeting del archivo saludo.properties
+ * cuando elegimos mostrarlo por fichero en tipoEjecucion
  */
 public class ModelFileImplementation implements Model{
     
    @Override
    public String getGreeting(){
-       //Cogemos el texto de hola mundo del archivo model y lo devolvemos 
+      
       String text; 
       ResourceBundle text_data; //Resource sirve para adquirir datos de otros archivos
       text_data = ResourceBundle.getBundle("reto_0_din.model.saludo");

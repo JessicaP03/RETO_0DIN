@@ -7,7 +7,7 @@ package reto_0_din.view;
 
 /**
  *
- * @author 2dam
+ * Mediante el metodo showGreeting recogeremos el texto y lo enseñaremos mediante ventana swing
  */
 public class ViewSwingImplementation extends javax.swing.JFrame implements View{
 

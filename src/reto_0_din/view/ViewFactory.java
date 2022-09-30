@@ -12,7 +12,9 @@ import reto_0_din.model.ModelFileImplementation;
 
 /**
  *
- * @author 2dam
+ * Recoge del tipoEjecucion el tipo de vista
+ * y dependiendo de cual haya elegido, mostrara el mensaje 
+ * por texto o por swing
  */
 public class ViewFactory {
     

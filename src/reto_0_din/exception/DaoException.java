@@ -7,12 +7,13 @@ package reto_0_din.exception;
 
 /**
  *
- * @author 2dam
+ * Excepción de DAO
  */
-public class DaoException extends Exception{
+public class DaoException extends Exception {
+
     private static final long serialVersionUID = 1L;
-    
-    public DaoException (String message){
+
+    public DaoException(String message) {
         super(message);
     }
 }
