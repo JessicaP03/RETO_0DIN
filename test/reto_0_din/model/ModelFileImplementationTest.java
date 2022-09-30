@@ -17,7 +17,6 @@ import static org.junit.Assert.*;
  * @author 2dam
  */
 public class ModelFileImplementationTest {
-    
 
     /**
      * Test of getGreeting method, of class ModelFileImplementation.
@@ -28,9 +27,6 @@ public class ModelFileImplementationTest {
         ModelFileImplementation instance = new ModelFileImplementation();
         String expResult = "";
         String result = instance.getGreeting();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
-    
+
 }

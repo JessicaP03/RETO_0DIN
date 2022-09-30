@@ -29,9 +29,7 @@ public class ViewFactoryTest {
         ViewFactory instance = new ViewFactory();
         View expResult = null;
         View result = instance.getView();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
